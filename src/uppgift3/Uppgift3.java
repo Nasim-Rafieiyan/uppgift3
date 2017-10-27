@@ -9,6 +9,7 @@ public class Uppgift3 extends JFrame {
     //variables:
     //Nytt Spel knapp
     private JButton nyttSpelKnapp;
+    private JLabel tomRad;
     private JPanel nyttSpelPanel = new JPanel();
     //pussel
     private JButton b1, b2, b3, b4, b5, b6, b7, b8;
@@ -43,17 +44,28 @@ public class Uppgift3 extends JFrame {
         nyttSpelPanel.setBackground(Color.WHITE);
         //nyttSpelKnapp
         nyttSpelKnapp = new JButton("Nytt Spel");
+        nyttSpelKnapp.setFocusPainted(false);
+        nyttSpelKnapp.setBackground(Color.GRAY);
+        nyttSpelKnapp.setPreferredSize(new Dimension(110, 30));
+        nyttSpelKnapp.setForeground(Color.PINK);
+        nyttSpelKnapp.setFont(new Font("Arial", Font.BOLD, 16));
         c1.fill = GridBagConstraints.HORIZONTAL;
         c1.gridx = 0;
         c1.gridy = 0;
         nyttSpelPanel.add(nyttSpelKnapp, c1);
+        tomRad = new JLabel("  ");
+        c1.fill = GridBagConstraints.HORIZONTAL;
+        c1.gridx = 0;
+        c1.gridy = 1;
+        nyttSpelPanel.add(tomRad, c1);
 
         //layout for pusselPanel
+        pusselPanel.setBackground(Color.WHITE);
         pusselPanel.setLayout(new GridBagLayout());
         GridBagConstraints c2 = new GridBagConstraints();
-        pusselPanel.setBackground(Color.WHITE);
         //Button1
         b1 = new JButton("1");
+        b1.setFocusPainted(false);
         b1.setBackground(Color.PINK);
         b1.setPreferredSize(new Dimension(80, 80));
         b1.setForeground(Color.GRAY);
@@ -64,6 +76,7 @@ public class Uppgift3 extends JFrame {
         pusselPanel.add(b1, c2);
         //Button2
         b2 = new JButton("2");
+        b2.setFocusPainted(false);
         b2.setBackground(Color.PINK);
         b2.setPreferredSize(new Dimension(80, 80));
         b2.setForeground(Color.GRAY);
@@ -74,6 +87,7 @@ public class Uppgift3 extends JFrame {
         pusselPanel.add(b2, c2);
         //Button3
         b3 = new JButton("3");
+        b3.setFocusPainted(false);
         b3.setBackground(Color.PINK);
         b3.setPreferredSize(new Dimension(80, 80));
         b3.setForeground(Color.GRAY);
@@ -84,6 +98,7 @@ public class Uppgift3 extends JFrame {
         pusselPanel.add(b3, c2);
         //Button4
         b4 = new JButton("4");
+        b4.setFocusPainted(false);
         b4.setBackground(Color.PINK);
         b4.setPreferredSize(new Dimension(80, 80));
         b4.setForeground(Color.GRAY);
@@ -94,6 +109,7 @@ public class Uppgift3 extends JFrame {
         pusselPanel.add(b4, c2);
         //Button5
         b5 = new JButton("5");
+        b5.setFocusPainted(false);
         b5.setBackground(Color.PINK);
         b5.setPreferredSize(new Dimension(80, 80));
         b5.setForeground(Color.GRAY);
@@ -104,6 +120,7 @@ public class Uppgift3 extends JFrame {
         pusselPanel.add(b5, c2);
         //Button6
         b6 = new JButton("6");
+        b6.setFocusPainted(false);
         b6.setBackground(Color.PINK);
         b6.setPreferredSize(new Dimension(80, 80));
         b6.setForeground(Color.GRAY);
@@ -114,6 +131,7 @@ public class Uppgift3 extends JFrame {
         pusselPanel.add(b6, c2);
         //Button7
         b7 = new JButton("7");
+        b7.setFocusPainted(false);
         b7.setBackground(Color.PINK);
         b7.setPreferredSize(new Dimension(80, 80));
         b7.setForeground(Color.GRAY);
@@ -124,6 +142,7 @@ public class Uppgift3 extends JFrame {
         pusselPanel.add(b7, c2);
         //Button8
         b8 = new JButton("8");
+        b8.setFocusPainted(false);
         b8.setBackground(Color.PINK);
         b8.setPreferredSize(new Dimension(80, 80));
         b8.setForeground(Color.GRAY);
@@ -134,6 +153,7 @@ public class Uppgift3 extends JFrame {
         pusselPanel.add(b8, c2);
         //Button9
         b9 = new JButton("9");
+        b9.setFocusPainted(false);
         b9.setBackground(Color.PINK);
         b9.setPreferredSize(new Dimension(80, 80));
         b9.setForeground(Color.GRAY);
@@ -144,6 +164,7 @@ public class Uppgift3 extends JFrame {
         pusselPanel.add(b9, c2);
         //Button10
         b10 = new JButton("10");
+        b10.setFocusPainted(false);
         b10.setBackground(Color.PINK);
         b10.setPreferredSize(new Dimension(80, 80));
         b10.setForeground(Color.GRAY);
@@ -154,6 +175,7 @@ public class Uppgift3 extends JFrame {
         pusselPanel.add(b10, c2);
         //Button11
         b11 = new JButton("11");
+        b11.setFocusPainted(false);
         b11.setBackground(Color.PINK);
         b11.setPreferredSize(new Dimension(80, 80));
         b11.setForeground(Color.GRAY);
@@ -164,6 +186,7 @@ public class Uppgift3 extends JFrame {
         pusselPanel.add(b11, c2);
         //Button12
         b12 = new JButton("12");
+        b12.setFocusPainted(false);
         b12.setBackground(Color.PINK);
         b12.setPreferredSize(new Dimension(80, 80));
         b12.setForeground(Color.GRAY);
@@ -174,6 +197,7 @@ public class Uppgift3 extends JFrame {
         pusselPanel.add(b12, c2);
         //Button13
         b13 = new JButton("13");
+        b13.setFocusPainted(false);
         b13.setBackground(Color.PINK);
         b13.setPreferredSize(new Dimension(80, 80));
         b13.setForeground(Color.GRAY);
@@ -184,6 +208,7 @@ public class Uppgift3 extends JFrame {
         pusselPanel.add(b13, c2);
         //Button14
         b14 = new JButton("14");
+        b14.setFocusPainted(false);
         b14.setBackground(Color.PINK);
         b14.setPreferredSize(new Dimension(80, 80));
         b14.setForeground(Color.GRAY);
@@ -194,6 +219,7 @@ public class Uppgift3 extends JFrame {
         pusselPanel.add(b14, c2);
         //Button15
         b15 = new JButton("15");
+        b15.setFocusPainted(false);
         b15.setBackground(Color.PINK);
         b15.setPreferredSize(new Dimension(80, 80));
         b15.setForeground(Color.GRAY);
@@ -202,12 +228,11 @@ public class Uppgift3 extends JFrame {
         c2.gridx = 2;
         c2.gridy = 3;
         pusselPanel.add(b15, c2);
-        //tommaPlatsen
+        //Tomma Platsen
         tommaPlatsen = new JButton("");
-        tommaPlatsen.setBackground(Color.WHITE);
         tommaPlatsen.setPreferredSize(new Dimension(80, 80));
-        tommaPlatsen.setForeground(Color.GRAY);
-        tommaPlatsen.setFont(new Font("Arial", Font.PLAIN, 40));
+        tommaPlatsen.setBorderPainted(false);
+        tommaPlatsen.setBackground(Color.WHITE);
         c2.fill = GridBagConstraints.HORIZONTAL;
         c2.gridx = 3;
         c2.gridy = 3;
@@ -215,7 +240,7 @@ public class Uppgift3 extends JFrame {
 
         //layout for meddelandePanel
         meddelandePanel.setBackground(Color.WHITE);
-        //meddelandePanel.setOpaque(true);
+        meddelandePanel.setOpaque(true);
         meddelandePanel.setLayout(new GridBagLayout());
         GridBagConstraints c3 = new GridBagConstraints();
         meddelandeLabel = new JLabel("Grattis, du vann!");
@@ -227,7 +252,6 @@ public class Uppgift3 extends JFrame {
         c3.gridx = 0;
         c3.gridy = 0;
         meddelandePanel.add(meddelandeLabel, c3);
-
     }
 
     public static void main(String[] args) {
