@@ -257,6 +257,9 @@ public class Uppgift3 extends JFrame {
 
         Event15 e15 = new Event15();
         b15.addActionListener(e15);
+
+        Event16 e16 = new Event16();
+        tommaPlatsen.addActionListener(e16);
     }
 
     public class Event15 implements ActionListener {
@@ -265,9 +268,13 @@ public class Uppgift3 extends JFrame {
             if (b11.getText().equals("")) {
                 b11.setText(b15.getText());
                 b15.setText("");
+                b11.setBackground(b15.getBackground());
+                b15.setBackground(Color.WHITE);
             } else if (b14.getText().equals("")) {
                 b14.setText(b15.getText());
                 b15.setText("");
+                b14.setBackground(b15.getBackground());
+                b15.setBackground(Color.WHITE);
             } else if (tommaPlatsen.getText().equals("")) {
                 tommaPlatsen.setText(b15.getText());
                 b15.setText("");
@@ -276,13 +283,31 @@ public class Uppgift3 extends JFrame {
             }
         }
     }
-        public static void main(String[] args) {
-            Uppgift3 gui = new Uppgift3();
-            gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            gui.setVisible(true);
-            //gui.pack();
-            gui.setSize(500, 500);
-            gui.setTitle("Femton Pusselspel");
-        }
 
+    public class Event16 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e15) {
+            if (b12.getText().equals("")) {
+                b12.setText(tommaPlatsen.getText());
+                tommaPlatsen.setText("");
+                b12.setBackground(tommaPlatsen.getBackground());
+                tommaPlatsen.setBackground(Color.WHITE);
+            } else if (b15.getText().equals("")) {
+                b15.setText(tommaPlatsen.getText());
+                tommaPlatsen.setText("");
+                b15.setBackground(tommaPlatsen.getBackground());
+                tommaPlatsen.setBackground(Color.WHITE);
+            }
+        }
     }
+
+    public static void main(String[] args) {
+        Uppgift3 gui = new Uppgift3();
+        gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        gui.setVisible(true);
+        //gui.pack();
+        gui.setSize(500, 500);
+        gui.setTitle("Femton Pusselspel");
+    }
+
+}
