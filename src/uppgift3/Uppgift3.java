@@ -255,13 +255,166 @@ public class Uppgift3 extends JFrame {
         c3.gridy = 0;
         meddelandePanel.add(meddelandeLabel, c3);
         
-        
+        Event9 e9 = new Event9();
+        b9.addActionListener(e9);
+
+        Event10 e10 = new Event10();
+        b10.addActionListener(e10);
+
+        Event11 e11 = new Event11();
+        b11.addActionListener(e11);
+
+        Event12 e12 = new Event12();
+        b12.addActionListener(e12);
+
+        Event13 e13 = new Event13();
+        b13.addActionListener(e13);
+
+        Event14 e14 = new Event14();
+        b14.addActionListener(e14);
 
         Event15 e15 = new Event15();
         b15.addActionListener(e15);
 
         Event16 e16 = new Event16();
         tommaPlatsen.addActionListener(e16);
+    }
+
+    public class Event9 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e9) {
+            if (b5.getText().equals("")) {
+                b5.setText(b9.getText());
+                b9.setText("");
+                b5.setBackground(b9.getBackground());
+                b9.setBackground(Color.WHITE);
+            } else if (b10.getText().equals("")) {
+                b10.setText(b9.getText());
+                b9.setText("");
+                b10.setBackground(b9.getBackground());
+                b9.setBackground(Color.WHITE);
+            } else if (b13.getText().equals("")) {
+                b13.setText(b9.getText());
+                b9.setText("");
+                b13.setBackground(b9.getBackground());
+                b9.setBackground(Color.WHITE);
+            }
+        }
+    }
+
+    public class Event10 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e10) {
+            if (b6.getText().equals("")) {
+                b6.setText(b10.getText());
+                b10.setText("");
+                b6.setBackground(b10.getBackground());
+                b10.setBackground(Color.WHITE);
+            } else if (b9.getText().equals("")) {
+                b9.setText(b10.getText());
+                b10.setText("");
+                b9.setBackground(b10.getBackground());
+                b10.setBackground(Color.WHITE);
+            } else if (b11.getText().equals("")) {
+                b11.setText(b10.getText());
+                b10.setText("");
+                b11.setBackground(b10.getBackground());
+                b10.setBackground(Color.WHITE);
+            } else if (b14.getText().equals("")) {
+                b14.setText(b10.getText());
+                b10.setText("");
+                b14.setBackground(b10.getBackground());
+                b10.setBackground(Color.WHITE);
+            }
+        }
+    }
+
+    public class Event11 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e11) {
+            if (b7.getText().equals("")) {
+                b7.setText(b11.getText());
+                b11.setText("");
+                b7.setBackground(b11.getBackground());
+                b11.setBackground(Color.WHITE);
+            } else if (b10.getText().equals("")) {
+                b10.setText(b11.getText());
+                b11.setText("");
+                b10.setBackground(b11.getBackground());
+                b11.setBackground(Color.WHITE);
+            } else if (b12.getText().equals("")) {
+                b12.setText(b11.getText());
+                b11.setText("");
+                b12.setBackground(b11.getBackground());
+                b11.setBackground(Color.WHITE);
+            } else if (b15.getText().equals("")) {
+                b15.setText(b11.getText());
+                b11.setText("");
+                b15.setBackground(b11.getBackground());
+                b11.setBackground(Color.WHITE);
+            }
+        }
+    }
+
+    public class Event12 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e12) {
+            if (b8.getText().equals("")) {
+                b8.setText(b12.getText());
+                b12.setText("");
+                b8.setBackground(b12.getBackground());
+                b12.setBackground(Color.WHITE);
+            } else if (b11.getText().equals("")) {
+                b11.setText(b12.getText());
+                b12.setText("");
+                b11.setBackground(b12.getBackground());
+                b12.setBackground(Color.WHITE);
+            } else if (tommaPlatsen.getText().equals("")) {
+                tommaPlatsen.setText(b12.getText());
+                b12.setText("");
+                tommaPlatsen.setBackground(b12.getBackground());
+                b12.setBackground(Color.WHITE);
+            }
+        }
+    }
+
+    public class Event13 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e13) {
+            if (b9.getText().equals("")) {
+                b9.setText(b13.getText());
+                b13.setText("");
+                b9.setBackground(b13.getBackground());
+                b13.setBackground(Color.WHITE);
+            } else if (b14.getText().equals("")) {
+                b14.setText(b13.getText());
+                b13.setText("");
+                b14.setBackground(b13.getBackground());
+                b13.setBackground(Color.WHITE);
+            }
+        }
+    }
+
+    public class Event14 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e14) {
+            if (b10.getText().equals("")) {
+                b10.setText(b14.getText());
+                b14.setText("");
+                b10.setBackground(b14.getBackground());
+                b14.setBackground(Color.WHITE);
+            } else if (b13.getText().equals("")) {
+                b13.setText(b14.getText());
+                b14.setText("");
+                b13.setBackground(b14.getBackground());
+                b14.setBackground(Color.WHITE);
+            } else if (b15.getText().equals("")) {
+                b15.setText(b14.getText());
+                b14.setText("");
+                b15.setBackground(b14.getBackground());
+                b14.setBackground(Color.WHITE);
+            }
+        }
     }
 
     public class Event15 implements ActionListener {
