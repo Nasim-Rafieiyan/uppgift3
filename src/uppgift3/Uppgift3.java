@@ -254,6 +254,8 @@ public class Uppgift3 extends JFrame {
         c3.gridx = 0;
         c3.gridy = 0;
         meddelandePanel.add(meddelandeLabel, c3);
+        
+        
 
         Event15 e15 = new Event15();
         b15.addActionListener(e15);
@@ -286,7 +288,7 @@ public class Uppgift3 extends JFrame {
 
     public class Event16 implements ActionListener {
 
-        public void actionPerformed(ActionEvent e15) {
+        public void actionPerformed(ActionEvent e16) {
             if (b12.getText().equals("")) {
                 b12.setText(tommaPlatsen.getText());
                 tommaPlatsen.setText("");
