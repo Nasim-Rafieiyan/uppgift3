@@ -254,7 +254,31 @@ public class Uppgift3 extends JFrame {
         c3.gridx = 0;
         c3.gridy = 0;
         meddelandePanel.add(meddelandeLabel, c3);
-        
+
+        Event1 e1 = new Event1();
+        b1.addActionListener(e1);
+
+        Event2 e2 = new Event2();
+        b2.addActionListener(e2);
+
+        Event3 e3 = new Event3();
+        b3.addActionListener(e3);
+
+        Event4 e4 = new Event4();
+        b4.addActionListener(e4);
+
+        Event5 e5 = new Event5();
+        b5.addActionListener(e5);
+
+        Event6 e6 = new Event6();
+        b6.addActionListener(e6);
+
+        Event7 e7 = new Event7();
+        b7.addActionListener(e7);
+
+        Event8 e8 = new Event8();
+        b8.addActionListener(e8);
+
         Event9 e9 = new Event9();
         b9.addActionListener(e9);
 
@@ -278,6 +302,182 @@ public class Uppgift3 extends JFrame {
 
         Event16 e16 = new Event16();
         tommaPlatsen.addActionListener(e16);
+    }
+
+    public class Event1 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e1) {
+            if (b2.getText().equals("")) {
+                b2.setText(b1.getText());
+                b1.setText("");
+                b2.setBackground(b1.getBackground());
+                b1.setBackground(Color.WHITE);
+            } else if (b5.getText().equals("")) {
+                b5.setText(b1.getText());
+                b1.setText("");
+                b5.setBackground(b1.getBackground());
+                b1.setBackground(Color.WHITE);
+            }
+        }
+    }
+
+    public class Event2 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e2) {
+            if (b1.getText().equals("")) {
+                b1.setText(b2.getText());
+                b2.setText("");
+                b1.setBackground(b2.getBackground());
+                b2.setBackground(Color.WHITE);
+            } else if (b3.getText().equals("")) {
+                b3.setText(b2.getText());
+                b2.setText("");
+                b3.setBackground(b2.getBackground());
+                b2.setBackground(Color.WHITE);
+            } else if (b6.getText().equals("")) {
+                b6.setText(b2.getText());
+                b2.setText("");
+                b6.setBackground(b2.getBackground());
+                b2.setBackground(Color.WHITE);
+            }
+        }
+    }
+
+    public class Event3 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e3) {
+            if (b2.getText().equals("")) {
+                b2.setText(b3.getText());
+                b3.setText("");
+                b2.setBackground(b3.getBackground());
+                b3.setBackground(Color.WHITE);
+            } else if (b4.getText().equals("")) {
+                b4.setText(b3.getText());
+                b3.setText("");
+                b4.setBackground(b3.getBackground());
+                b3.setBackground(Color.WHITE);
+            } else if (b7.getText().equals("")) {
+                b7.setText(b3.getText());
+                b3.setText("");
+                b7.setBackground(b3.getBackground());
+                b3.setBackground(Color.WHITE);
+            }
+        }
+    }
+
+    public class Event4 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e4) {
+            if (b3.getText().equals("")) {
+                b3.setText(b4.getText());
+                b4.setText("");
+                b3.setBackground(b4.getBackground());
+                b4.setBackground(Color.WHITE);
+            } else if (b8.getText().equals("")) {
+                b8.setText(b4.getText());
+                b4.setText("");
+                b8.setBackground(b4.getBackground());
+                b4.setBackground(Color.WHITE);
+            }
+        }
+    }
+
+    public class Event5 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e5) {
+            if (b1.getText().equals("")) {
+                b1.setText(b5.getText());
+                b5.setText("");
+                b1.setBackground(b5.getBackground());
+                b5.setBackground(Color.WHITE);
+            } else if (b6.getText().equals("")) {
+                b6.setText(b5.getText());
+                b5.setText("");
+                b6.setBackground(b5.getBackground());
+                b5.setBackground(Color.WHITE);
+            } else if (b9.getText().equals("")) {
+                b9.setText(b5.getText());
+                b5.setText("");
+                b9.setBackground(b5.getBackground());
+                b5.setBackground(Color.WHITE);
+            }
+        }
+    }
+
+    public class Event6 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e6) {
+            if (b2.getText().equals("")) {
+                b2.setText(b6.getText());
+                b6.setText("");
+                b2.setBackground(b6.getBackground());
+                b6.setBackground(Color.WHITE);
+            } else if (b5.getText().equals("")) {
+                b5.setText(b6.getText());
+                b6.setText("");
+                b5.setBackground(b6.getBackground());
+                b6.setBackground(Color.WHITE);
+            } else if (b7.getText().equals("")) {
+                b7.setText(b6.getText());
+                b6.setText("");
+                b7.setBackground(b6.getBackground());
+                b6.setBackground(Color.WHITE);
+            } else if (b10.getText().equals("")) {
+                b10.setText(b6.getText());
+                b6.setText("");
+                b10.setBackground(b6.getBackground());
+                b6.setBackground(Color.WHITE);
+            }
+        }
+    }
+
+    public class Event7 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e7) {
+            if (b3.getText().equals("")) {
+                b3.setText(b7.getText());
+                b7.setText("");
+                b3.setBackground(b7.getBackground());
+                b7.setBackground(Color.WHITE);
+            } else if (b6.getText().equals("")) {
+                b6.setText(b7.getText());
+                b7.setText("");
+                b6.setBackground(b7.getBackground());
+                b7.setBackground(Color.WHITE);
+            } else if (b8.getText().equals("")) {
+                b8.setText(b7.getText());
+                b7.setText("");
+                b8.setBackground(b7.getBackground());
+                b7.setBackground(Color.WHITE);
+            } else if (b11.getText().equals("")) {
+                b11.setText(b7.getText());
+                b7.setText("");
+                b11.setBackground(b7.getBackground());
+                b7.setBackground(Color.WHITE);
+            }
+        }
+    }
+
+    public class Event8 implements ActionListener {
+
+        public void actionPerformed(ActionEvent e8) {
+            if (b4.getText().equals("")) {
+                b4.setText(b8.getText());
+                b8.setText("");
+                b4.setBackground(b8.getBackground());
+                b8.setBackground(Color.WHITE);
+            } else if (b7.getText().equals("")) {
+                b7.setText(b8.getText());
+                b8.setText("");
+                b7.setBackground(b8.getBackground());
+                b8.setBackground(Color.WHITE);
+            } else if (b12.getText().equals("")) {
+                b12.setText(b8.getText());
+                b8.setText("");
+                b12.setBackground(b8.getBackground());
+                b8.setBackground(Color.WHITE);
+            }
+        }
     }
 
     public class Event9 implements ActionListener {
@@ -441,7 +641,7 @@ public class Uppgift3 extends JFrame {
 
     public class Event16 implements ActionListener {
 
-        public void actionPerformed(ActionEvent e16) {
+        public void actionPerformed(ActionEvent e15) {
             if (b12.getText().equals("")) {
                 b12.setText(tommaPlatsen.getText());
                 tommaPlatsen.setText("");
