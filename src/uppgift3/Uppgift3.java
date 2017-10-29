@@ -232,6 +232,8 @@ public class Uppgift3 extends JFrame {
         tommaPlatsen = new JButton("");
         tommaPlatsen.setPreferredSize(new Dimension(80, 80));
         tommaPlatsen.setBorderPainted(false);
+        tommaPlatsen.setForeground(Color.GRAY);
+        tommaPlatsen.setFont(new Font("Arial", Font.PLAIN, 40));
         tommaPlatsen.setBackground(Color.WHITE);
         c2.fill = GridBagConstraints.HORIZONTAL;
         c2.gridx = 3;
@@ -252,15 +254,35 @@ public class Uppgift3 extends JFrame {
         c3.gridx = 0;
         c3.gridy = 0;
         meddelandePanel.add(meddelandeLabel, c3);
+
+        Event15 e15 = new Event15();
+        b15.addActionListener(e15);
     }
 
-    public static void main(String[] args) {
-        Uppgift3 gui = new Uppgift3();
-        gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        gui.setVisible(true);
-        //gui.pack();
-        gui.setSize(500, 500);
-        gui.setTitle("Femton Pusselspel");
-    }
+    public class Event15 implements ActionListener {
 
-}
+        public void actionPerformed(ActionEvent e15) {
+            if (b11.getText().equals("")) {
+                b11.setText(b15.getText());
+                b15.setText("");
+            } else if (b14.getText().equals("")) {
+                b14.setText(b15.getText());
+                b15.setText("");
+            } else if (tommaPlatsen.getText().equals("")) {
+                tommaPlatsen.setText(b15.getText());
+                b15.setText("");
+                tommaPlatsen.setBackground(b15.getBackground());
+                b15.setBackground(Color.WHITE);
+            }
+        }
+    }
+        public static void main(String[] args) {
+            Uppgift3 gui = new Uppgift3();
+            gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            gui.setVisible(true);
+            //gui.pack();
+            gui.setSize(500, 500);
+            gui.setTitle("Femton Pusselspel");
+        }
+
+    }
