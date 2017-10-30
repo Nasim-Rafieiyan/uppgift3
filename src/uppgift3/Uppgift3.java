@@ -15,7 +15,7 @@ public class Uppgift3 extends JFrame {
     //pussel
     private JButton b1, b2, b3, b4, b5, b6, b7, b8;
     private JButton b9, b10, b11, b12, b13, b14, b15, tommaPlatsen;
-    private String [] buttomText = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"};
+    private String[] buttomText = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"};
     private ArrayList<JButton> buttonList = new ArrayList<JButton>();
     private JPanel pusselPanel = new JPanel();
     //meddelande
@@ -98,171 +98,34 @@ public class Uppgift3 extends JFrame {
         buttonList.add(b15);
         pusselPanel.setLayout(new GridBagLayout());
         GridBagConstraints c2 = new GridBagConstraints();
-        //Button1
-        b1 = new JButton("1");
-        b1.setFocusPainted(false);
-        b1.setBackground(Color.PINK);
-        b1.setPreferredSize(new Dimension(80, 80));
-        b1.setForeground(Color.GRAY);
-        b1.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 0;
-        c2.gridy = 0;
-        pusselPanel.add(b1, c2);
-        //Button2
-        b2 = new JButton("2");
-        b2.setFocusPainted(false);
-        b2.setBackground(Color.PINK);
-        b2.setPreferredSize(new Dimension(80, 80));
-        b2.setForeground(Color.GRAY);
-        b2.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 1;
-        c2.gridy = 0;
-        pusselPanel.add(b2, c2);
-        //Button3
-        b3 = new JButton("3");
-        b3.setFocusPainted(false);
-        b3.setBackground(Color.PINK);
-        b3.setPreferredSize(new Dimension(80, 80));
-        b3.setForeground(Color.GRAY);
-        b3.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 2;
-        c2.gridy = 0;
-        pusselPanel.add(b3, c2);
-        //Button4
-        b4 = new JButton("4");
-        b4.setFocusPainted(false);
-        b4.setBackground(Color.PINK);
-        b4.setPreferredSize(new Dimension(80, 80));
-        b4.setForeground(Color.GRAY);
-        b4.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 3;
-        c2.gridy = 0;
-        pusselPanel.add(b4, c2);
-        //Button5
-        b5 = new JButton("5");
-        b5.setFocusPainted(false);
-        b5.setBackground(Color.PINK);
-        b5.setPreferredSize(new Dimension(80, 80));
-        b5.setForeground(Color.GRAY);
-        b5.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 0;
-        c2.gridy = 1;
-        pusselPanel.add(b5, c2);
-        //Button6
-        b6 = new JButton("6");
-        b6.setFocusPainted(false);
-        b6.setBackground(Color.PINK);
-        b6.setPreferredSize(new Dimension(80, 80));
-        b6.setForeground(Color.GRAY);
-        b6.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 1;
-        c2.gridy = 1;
-        pusselPanel.add(b6, c2);
-        //Button7
-        b7 = new JButton("7");
-        b7.setFocusPainted(false);
-        b7.setBackground(Color.PINK);
-        b7.setPreferredSize(new Dimension(80, 80));
-        b7.setForeground(Color.GRAY);
-        b7.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 2;
-        c2.gridy = 1;
-        pusselPanel.add(b7, c2);
-        //Button8
-        b8 = new JButton("8");
-        b8.setFocusPainted(false);
-        b8.setBackground(Color.PINK);
-        b8.setPreferredSize(new Dimension(80, 80));
-        b8.setForeground(Color.GRAY);
-        b8.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 3;
-        c2.gridy = 1;
-        pusselPanel.add(b8, c2);
-        //Button9
-        b9 = new JButton("9");
-        b9.setFocusPainted(false);
-        b9.setBackground(Color.PINK);
-        b9.setPreferredSize(new Dimension(80, 80));
-        b9.setForeground(Color.GRAY);
-        b9.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 0;
-        c2.gridy = 2;
-        pusselPanel.add(b9, c2);
-        //Button10
-        b10 = new JButton("10");
-        b10.setFocusPainted(false);
-        b10.setBackground(Color.PINK);
-        b10.setPreferredSize(new Dimension(80, 80));
-        b10.setForeground(Color.GRAY);
-        b10.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 1;
-        c2.gridy = 2;
-        pusselPanel.add(b10, c2);
-        //Button11
-        b11 = new JButton("11");
-        b11.setFocusPainted(false);
-        b11.setBackground(Color.PINK);
-        b11.setPreferredSize(new Dimension(80, 80));
-        b11.setForeground(Color.GRAY);
-        b11.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 2;
-        c2.gridy = 2;
-        pusselPanel.add(b11, c2);
-        //Button12
-        b12 = new JButton("12");
-        b12.setFocusPainted(false);
-        b12.setBackground(Color.PINK);
-        b12.setPreferredSize(new Dimension(80, 80));
-        b12.setForeground(Color.GRAY);
-        b12.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 3;
-        c2.gridy = 2;
-        pusselPanel.add(b12, c2);
-        //Button13
-        b13 = new JButton("13");
-        b13.setFocusPainted(false);
-        b13.setBackground(Color.PINK);
-        b13.setPreferredSize(new Dimension(80, 80));
-        b13.setForeground(Color.GRAY);
-        b13.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 0;
-        c2.gridy = 3;
-        pusselPanel.add(b13, c2);
-        //Button14
-        b14 = new JButton("14");
-        b14.setFocusPainted(false);
-        b14.setBackground(Color.PINK);
-        b14.setPreferredSize(new Dimension(80, 80));
-        b14.setForeground(Color.GRAY);
-        b14.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 1;
-        c2.gridy = 3;
-        pusselPanel.add(b14, c2);
-        //Button15
-        b15 = new JButton("15");
-        b15.setFocusPainted(false);
-        b15.setBackground(Color.PINK);
-        b15.setPreferredSize(new Dimension(80, 80));
-        b15.setForeground(Color.GRAY);
-        b15.setFont(new Font("Arial", Font.PLAIN, 40));
-        c2.fill = GridBagConstraints.HORIZONTAL;
-        c2.gridx = 2;
-        c2.gridy = 3;
-        pusselPanel.add(b15, c2);
+
+        //styling buttons (b1-b15)
+        KnapparStil bm = new KnapparStil();
+        bm.knapparStilMetod(buttonList);
+
+        //adding buttons
+        for (int i = 0; i < buttonList.size(); i++) {
+            c2.fill = GridBagConstraints.HORIZONTAL;
+            if (i <= 3) {
+                c2.gridx = i;
+                c2.gridy = 0;
+            } else if (i >= 4 && i <= 7) {
+                c2.gridx = i - 4;
+                c2.gridy = 1;
+            } else if (i >= 8 && i <= 11) {
+                c2.gridx = i - 8;
+                c2.gridy = 2;
+            } else if (i >= 12 && i <= 15) {
+                c2.gridx = i - 12;
+                c2.gridy = 3;
+            }
+            pusselPanel.add(buttonList.get(i), c2);
+        }
+
+        //shuffle buttons
+        BlandaKnappar bk = new BlandaKnappar();
+        bk.blandaKnapparMetod(buttomText, buttonList);
+
         //Tomma Platsen
         tommaPlatsen = new JButton("");
         tommaPlatsen.setPreferredSize(new Dimension(80, 80));
@@ -289,7 +152,7 @@ public class Uppgift3 extends JFrame {
         c3.gridx = 0;
         c3.gridy = 0;
         meddelandePanel.add(meddelandeLabel, c3);
-
+        
         Event1 e1 = new Event1();
         b1.addActionListener(e1);
 
