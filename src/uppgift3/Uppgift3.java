@@ -152,7 +152,10 @@ public class Uppgift3 extends JFrame {
         c3.gridx = 0;
         c3.gridy = 0;
         meddelandePanel.add(meddelandeLabel, c3);
-        
+
+        EventNew eNew = new EventNew();
+        nyttSpelKnapp.addActionListener(eNew);
+
         Event1 e1 = new Event1();
         b1.addActionListener(e1);
 
@@ -200,6 +203,15 @@ public class Uppgift3 extends JFrame {
 
         Event16 e16 = new Event16();
         tommaPlatsen.addActionListener(e16);
+    }
+
+    public class EventNew implements ActionListener {
+
+        public void actionPerformed(ActionEvent eNew) {
+            //shuffle buttons
+            BlandaKnappar bk = new BlandaKnappar();
+            bk.blandaKnapparMetod(buttomText, buttonList);
+        }
     }
 
     public class Event1 implements ActionListener {
