@@ -3,6 +3,7 @@ package uppgift3;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.ArrayList;
 
 public class Uppgift3 extends JFrame {
 
@@ -14,6 +15,8 @@ public class Uppgift3 extends JFrame {
     //pussel
     private JButton b1, b2, b3, b4, b5, b6, b7, b8;
     private JButton b9, b10, b11, b12, b13, b14, b15, tommaPlatsen;
+    private String [] buttomText = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"};
+    private ArrayList<JButton> buttonList = new ArrayList<JButton>();
     private JPanel pusselPanel = new JPanel();
     //meddelande
     private JLabel meddelandeLabel;
@@ -61,6 +64,38 @@ public class Uppgift3 extends JFrame {
 
         //layout for pusselPanel
         pusselPanel.setBackground(Color.WHITE);
+        //create buttons
+        b1 = new JButton();
+        b2 = new JButton();
+        b3 = new JButton();
+        b4 = new JButton();
+        b5 = new JButton();
+        b6 = new JButton();
+        b7 = new JButton();
+        b8 = new JButton();
+        b9 = new JButton();
+        b10 = new JButton();
+        b11 = new JButton();
+        b12 = new JButton();
+        b13 = new JButton();
+        b14 = new JButton();
+        b15 = new JButton();
+        //add buttons to buttonList (ArrayList)
+        buttonList.add(b1);
+        buttonList.add(b2);
+        buttonList.add(b3);
+        buttonList.add(b4);
+        buttonList.add(b5);
+        buttonList.add(b6);
+        buttonList.add(b7);
+        buttonList.add(b8);
+        buttonList.add(b9);
+        buttonList.add(b10);
+        buttonList.add(b11);
+        buttonList.add(b12);
+        buttonList.add(b13);
+        buttonList.add(b14);
+        buttonList.add(b15);
         pusselPanel.setLayout(new GridBagLayout());
         GridBagConstraints c2 = new GridBagConstraints();
         //Button1
@@ -231,7 +266,7 @@ public class Uppgift3 extends JFrame {
         //Tomma Platsen
         tommaPlatsen = new JButton("");
         tommaPlatsen.setPreferredSize(new Dimension(80, 80));
-        tommaPlatsen.setBorderPainted(false);
+        //tommaPlatsen.setBorderPainted(false);
         tommaPlatsen.setForeground(Color.GRAY);
         tommaPlatsen.setFont(new Font("Arial", Font.PLAIN, 40));
         tommaPlatsen.setBackground(Color.WHITE);
