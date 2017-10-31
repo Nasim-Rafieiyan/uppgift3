@@ -122,7 +122,7 @@ public class Uppgift3 extends JFrame {
             pusselPanel.add(buttonList.get(i), c2);
         }
 
-        //shuffle buttons
+        //shuffle text {"1",...,"15"} and then doing setText to buttons  
         BlandaKnappar bk = new BlandaKnappar();
         bk.blandaKnapparMetod(buttomText, buttonList);
 
@@ -211,6 +211,14 @@ public class Uppgift3 extends JFrame {
             //shuffle buttons
             BlandaKnappar bk = new BlandaKnappar();
             bk.blandaKnapparMetod(buttomText, buttonList);
+            
+            //to set the color of b1-b15 -->pink
+            for (int i = 0; i < buttonList.size(); i++) {
+                buttonList.get(i).setBackground(Color.PINK);
+            }
+            //to set the color of tommaPlatsen --> White 
+            tommaPlatsen.setBackground(Color.WHITE);
+            tommaPlatsen.setText("");
         }
     }
 
