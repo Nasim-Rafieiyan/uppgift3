@@ -143,7 +143,7 @@ public class Uppgift3 extends JFrame {
         meddelandePanel.setOpaque(true);
         meddelandePanel.setLayout(new GridBagLayout());
         GridBagConstraints c3 = new GridBagConstraints();
-        meddelandeLabel = new JLabel("Grattis, du vann!");
+        meddelandeLabel = new JLabel("");
         meddelandeLabel.setBackground(Color.WHITE);
         meddelandeLabel.setOpaque(true);
         meddelandeLabel.setForeground(Color.GRAY);
@@ -228,6 +228,9 @@ public class Uppgift3 extends JFrame {
                 b5.setBackground(b1.getBackground());
                 b1.setBackground(Color.WHITE);
             }
+
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -250,6 +253,9 @@ public class Uppgift3 extends JFrame {
                 b6.setBackground(b2.getBackground());
                 b2.setBackground(Color.WHITE);
             }
+
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -272,6 +278,9 @@ public class Uppgift3 extends JFrame {
                 b7.setBackground(b3.getBackground());
                 b3.setBackground(Color.WHITE);
             }
+
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -289,6 +298,8 @@ public class Uppgift3 extends JFrame {
                 b8.setBackground(b4.getBackground());
                 b4.setBackground(Color.WHITE);
             }
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -311,6 +322,8 @@ public class Uppgift3 extends JFrame {
                 b9.setBackground(b5.getBackground());
                 b5.setBackground(Color.WHITE);
             }
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -338,6 +351,8 @@ public class Uppgift3 extends JFrame {
                 b10.setBackground(b6.getBackground());
                 b6.setBackground(Color.WHITE);
             }
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -365,6 +380,8 @@ public class Uppgift3 extends JFrame {
                 b11.setBackground(b7.getBackground());
                 b7.setBackground(Color.WHITE);
             }
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -387,6 +404,8 @@ public class Uppgift3 extends JFrame {
                 b12.setBackground(b8.getBackground());
                 b8.setBackground(Color.WHITE);
             }
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -409,6 +428,8 @@ public class Uppgift3 extends JFrame {
                 b13.setBackground(b9.getBackground());
                 b9.setBackground(Color.WHITE);
             }
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -436,6 +457,8 @@ public class Uppgift3 extends JFrame {
                 b14.setBackground(b10.getBackground());
                 b10.setBackground(Color.WHITE);
             }
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -463,6 +486,8 @@ public class Uppgift3 extends JFrame {
                 b15.setBackground(b11.getBackground());
                 b11.setBackground(Color.WHITE);
             }
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -485,6 +510,8 @@ public class Uppgift3 extends JFrame {
                 tommaPlatsen.setBackground(b12.getBackground());
                 b12.setBackground(Color.WHITE);
             }
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -502,6 +529,8 @@ public class Uppgift3 extends JFrame {
                 b14.setBackground(b13.getBackground());
                 b13.setBackground(Color.WHITE);
             }
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -524,6 +553,8 @@ public class Uppgift3 extends JFrame {
                 b15.setBackground(b14.getBackground());
                 b14.setBackground(Color.WHITE);
             }
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -546,6 +577,8 @@ public class Uppgift3 extends JFrame {
                 tommaPlatsen.setBackground(b15.getBackground());
                 b15.setBackground(Color.WHITE);
             }
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
@@ -563,6 +596,8 @@ public class Uppgift3 extends JFrame {
                 b15.setBackground(tommaPlatsen.getBackground());
                 tommaPlatsen.setBackground(Color.WHITE);
             }
+            DuVann al = new DuVann();
+            al.speletÄrLöst(buttonList, meddelandeLabel);
         }
     }
 
