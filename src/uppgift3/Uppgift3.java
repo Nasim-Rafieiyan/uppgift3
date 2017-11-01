@@ -15,7 +15,7 @@ public class Uppgift3 extends JFrame {
     //pussel
     private JButton b1, b2, b3, b4, b5, b6, b7, b8;
     private JButton b9, b10, b11, b12, b13, b14, b15, tommaPlatsen;
-    private String[] buttomText = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"};
+    private String[] buttonText = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"};
     private ArrayList<JButton> buttonList = new ArrayList<JButton>();
     private JPanel pusselPanel = new JPanel();
     //meddelande
@@ -122,9 +122,21 @@ public class Uppgift3 extends JFrame {
             pusselPanel.add(buttonList.get(i), c2);
         }
 
-        //shuffle text {"1",...,"15"} and then doing setText to buttons  
-        BlandaKnappar bk = new BlandaKnappar();
-        bk.blandaKnapparMetod(buttomText, buttonList);
+        //Är spelet lösbar???
+        boolean run = false;
+        int[] buttonNumber = new int[15];
+        while (!run) {
+            //shuffle buttons
+            BlandaKnappar bk = new BlandaKnappar();
+            bk.blandaKnapparMetod(buttonText, buttonList);
+
+            for (int i = 0; i < buttonText.length; i++) {
+                buttonNumber[i] = Integer.parseInt(buttonText[i]);
+            }
+            ÄrLösbar al = new ÄrLösbar();
+            run = al.speletÄrLösbar(buttonNumber);
+        }
+
 
         //Tomma Platsen
         tommaPlatsen = new JButton("");
@@ -208,10 +220,20 @@ public class Uppgift3 extends JFrame {
     public class EventNew implements ActionListener {
 
         public void actionPerformed(ActionEvent eNew) {
-            //shuffle buttons
-            BlandaKnappar bk = new BlandaKnappar();
-            bk.blandaKnapparMetod(buttomText, buttonList);
-            
+            //Är spelet lösbar???
+            boolean run = false;
+            int[] buttonNumber = new int[15];
+            while (!run) {
+                //shuffle buttons
+                BlandaKnappar bk = new BlandaKnappar();
+                bk.blandaKnapparMetod(buttonText, buttonList);
+
+                for (int i = 0; i < buttonText.length; i++) {
+                    buttonNumber[i] = Integer.parseInt(buttonText[i]);
+                }
+                ÄrLösbar al = new ÄrLösbar();
+                run = al.speletÄrLösbar(buttonNumber);
+            }
             //to set the color of b1-b15 -->pink
             for (int i = 0; i < buttonList.size(); i++) {
                 buttonList.get(i).setBackground(Color.PINK);
